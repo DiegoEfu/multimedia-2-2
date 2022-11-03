@@ -1,58 +1,227 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Math Academy</title>
 
-  <body>
-    <nav class="deep-orange lighten-2" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">AcaMath</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">¿Quiénes Somos?</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Instructores</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">¿Quiénes Somos?</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Instructores</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    <div class="container">
-        <div id="index-banner" class="banner-container">
-            <div class="section no-pad-bot">
-              <div class="container row">
-                <br><br>
-                <div class="col s2"></div>
-                <div class="panel black col s8">
-                    <h1 class="header center red-text">¡Bienvenido a AcaMath!</h1>
-                    <div class="row center">
-                    <h5 class="header col s12 light">La mejor opción para tu formación en matemáticas puras.</h5>
-                    </div>
-                    <div class="row center">
-                    <a href="#" id="download-button" class="btn-large waves-effect waves-light red accent-2">¡Inscríbete ya!</a>
-                    </div>
-                    <br><br>
-                </div>
-                <div class="col s2"></div>
-              </div>
-            </div>
-          </div>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="orange darken-3 black-text text-darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo text-black">MathAcademy</a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Instructores</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Cursos</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">¿Quiénes Somos?</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">¿Quiénes Somos?</a></li>
+        <li><a href="#">Instructores</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+  </nav>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container panel black">
+        <br><br>
+        <h2 class="header center orange-text text-darken-2">¡Bienvenido a MathAcademy!</h2>
+        <div class="row center">
+          <h5 class="header col s12 light">La mejor opción para tu formación en <b>matemáticas puras.</b></h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light orange lighten-1 black-text">¡Inscríbete ya!</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/banner-bg.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <h1 style="text-align: center;">¿Quiénes Somos?</h1>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center orange-text"><i class="material-icons">school</i></h2>
+            <h5 class="center">Una Academia</h5>
+
+            <p class="dark">
+              Somos una academia virtual especializada en la formación de conocimientos
+              específicos de matemática pura. Nuestra visión es aumentar el alcance
+              de los conocimientos de matemática pura para estudiantes que deseen
+              formarse en esta área.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center orange-text"><i class="material-icons">rss_feed</i></h2>
+            <h5 class="center">Una Experiencia 100% en línea</h5>
+
+            <p class="dark">
+              Somos una institución que cree que la formación virtual es totalmente posible.
+              Ponemos nuestras esperanzas en instructores especializados en formación en línea
+              y en las herramientas más nuevas y apropiadas para cada curso.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center orange-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Un Objetivo</h5>
+
+            <p class="dark">
+              Nuestro objetivo es lograr crear más profesionales y especialistas que sean
+              capaces de aportar nuevos conocimientos a la investigación en la matemática pura.
+              El avance constante de la tecnología requiere conocimientos cada vez más profundos de
+              matemática.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="header col s12" style="background-color: black;">Nuestros Instructores</h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/bg2.webp" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 row">
+          <div class="col s3">
+            <img src="assets/img/ins1.png" class="circle responsive-img" alt="instructor 1">
+          </div>
+         
+          <div class="col s9">
+            <h4>María Hernández</h4>
+            <p>
+              Matemática graduada de la universidad de Murcia, especialista en análisis real y complejo. <br>
+              <b>Miembro fundador de Math Academy.</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 row">
+          <div class="col s3">
+            <img src="assets/img/ins2.jpg" class="circle responsive-img" alt="instructor 2">
+          </div>
+         
+          <div class="col s9">
+            <h4>Carlos Hernández</h4>
+            <p>
+              Matemático graduado de la universidad de Murcia, especialista en matemática discreta y estadística. <br>
+              <b>Miembro fundador de Math Academy.</b>
+            </p>
+          </div>
+        </div>   
+        
+        <div class="col s12 row">
+          <div class="col s3">
+            <img src="assets/img/ins3.jpg" class="circle responsive-img" alt="instructor 2">
+          </div>
+         
+          <div class="col s9">
+            <h4>Pedro Ramírez</h4>
+            <p>
+              Matemático graduado de la universidad de Lima, especialista en cálculo y teoría de autómatas. <br>
+              <b>Miembro fundador de Math Academy.</b>
+            </p>
+          </div>
+        </div> 
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/init.js"></script>
+
   </body>
 </html>
