@@ -16,23 +16,23 @@
       <a id="logo-container" href="#" class="brand-logo text-black">MathAcademy</a>
       
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Instructores</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Cursos</a></li>
+        <li><a href="#cursos">Cursos</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#instructores">Instructores</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">¿Quiénes Somos?</a></li>
+        <li><a href="#quienes">¿Quiénes Somos?</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">¿Quiénes Somos?</a></li>
-        <li><a href="#">Instructores</a></li>
-        <li><a href="#">Cursos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#quienes">¿Quiénes Somos?</a></li>
+        <li><a href="#instructores">Instructores</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -56,7 +56,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="quienes">
     <div class="section">
 
       <div class="row">
@@ -107,7 +107,7 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="instructores">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -123,11 +123,11 @@
 
       <div class="row">
         <div class="col s12 row">
-          <div class="col s3">
+          <div class="col s6 m3">
             <img src="assets/img/ins1.png" class="circle responsive-img" alt="instructor 1">
           </div>
          
-          <div class="col s9">
+          <div class="col s6 m9">
             <h4>María Hernández</h4>
             <p>
               Matemática graduada de la universidad de Murcia, especialista en análisis real y complejo. <br>
@@ -137,11 +137,11 @@
         </div>
 
         <div class="col s12 row">
-          <div class="col s3">
+          <div class="col s6 m3">
             <img src="assets/img/ins2.jpg" class="circle responsive-img" alt="instructor 2">
           </div>
          
-          <div class="col s9">
+          <div class="col s6 m9">
             <h4>Carlos Hernández</h4>
             <p>
               Matemático graduado de la universidad de Murcia, especialista en matemática discreta y estadística. <br>
@@ -151,11 +151,11 @@
         </div>   
         
         <div class="col s12 row">
-          <div class="col s3">
+          <div class="col s6 m3">
             <img src="assets/img/ins3.jpg" class="circle responsive-img" alt="instructor 2">
           </div>
          
-          <div class="col s9">
+          <div class="col s6 m9">
             <h4>Pedro Ramírez</h4>
             <p>
               Matemático graduado de la universidad de Lima, especialista en cálculo y teoría de autómatas. <br>
@@ -169,7 +169,7 @@
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="cursos">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -281,12 +281,68 @@
     </div>
   </div>
 
+  <div class="parallax-container valign-wrapper" id="contacto">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="header col s12 light black">Contacto</h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/bg4.webp" alt="Unsplashed background img 4"></div>
+  </div>
+
+  <div class="container">
+    <div class="section row">
+      <form class="col s12" id="formulario">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate" required>
+            <label for="first_name">Nombres*</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" required>
+            <label for="last_name">Apellidos*</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col m6 s12">
+            <input id="email" type="email" class="validate" required>
+            <label for="email">Correo Electrónico*</label>
+          </div>
+
+          <div class="input-field col m6 s12">
+            <input id="telefono" type="tel" class="validate" requireds>
+            <label for="telefono">Teléfono</label>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" required></textarea>
+              <label for="textarea1">Contenido*</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s3"></div>
+            <button class="btn orange col s6" type="submit">Enviar Formulario</button>
+            <div class="col s3"></div>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="black-text">Bio de Math Academy</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <p class="grey-text text-lighten-4">
+            Somos una academia encargada de desarrollar el potencial en matemáticas puras de nuestros estudiantes,
+            y apoyar la investigación académica en matemáticas puras.
+          </p>
 
 
         </div>
@@ -321,6 +377,22 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
+
+  <script>
+    $('#formulario').submit((e) => {
+      e.preventDefault();
+      
+      if(!$('#first_name').val().trim().match(/^[A-Za-z\s]+$/g))
+        alert("El campo de nombres solo debe estar formado por letras y espacios entre palabras.")
+      else if(!$('#last_name').val().trim().match(/^[A-Za-z\s]+$/g))
+        alert("El campo de apellidos solo debe estar formado por letras y espacios entre palabras.")
+      else{
+        alert("El formulario ha sido enviado");
+        $('input').val('');
+        $('textarea').val('');
+      }
+    })
+  </script>
 
   </body>
 </html>
