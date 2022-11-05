@@ -318,8 +318,8 @@
 
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea" required></textarea>
-              <label for="textarea1">Contenido*</label>
+              <textarea id="contenido" class="materialize-textarea" required></textarea>
+              <label for="contenido">Contenido*</label>
             </div>
           </div>
 
@@ -383,9 +383,15 @@
       e.preventDefault();
       
       if(!$('#first_name').val().trim().match(/^[A-Za-z\s]+$/g))
-        alert("El campo de nombres solo debe estar formado por letras y espacios entre palabras.")
+        alert("El campo de nombres solo debe estar formado por letras y espacios entre palabras.");
       else if(!$('#last_name').val().trim().match(/^[A-Za-z\s]+$/g))
-        alert("El campo de apellidos solo debe estar formado por letras y espacios entre palabras.")
+        alert("El campo de apellidos solo debe estar formado por letras y espacios entre palabras.");
+      else if($('#email').val() === ''){
+        alert("El email no puede estar vacío.");
+      }
+      else if($('#contenido').val() === ''){
+        alert("El contenido no puede estar vacío.");
+      }
       else{
         alert("El formulario ha sido enviado");
         $('input').val('');
